@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
+@import '~antd/dist/antd.css';
+
+$DeepRed: #CC0C00;
+$DeepBlack: #000000;
+
+html, body {
+	font-size: 15px !important;
+	font-family: 'Lato', sans-serif !important;
+}
+
+form.custom-form {
+	.form-item {
+		margin-bottom: 15px;
+	}
+
+	p.err-msg {
+		color: $DeepRed;
+		font-size: 0.9em;
+	}
+
+	a {
+		color: $DeepRed;
+	}
+
+	input {
+		height: 40px;
+		width: 100%;
+		padding: 7px 15px;
+		border: 1px solid rgba(0,0,0,0.3);
+		border-radius: 3px;
+
+		& + span {
+			line-height: 1;
+			color: $DeepRed;
+			font-size: 0.8em;
+		}
+	}
+
+	button {
+		border: 1px solid rgba(0,0,0,0.1);
+		background-color: $DeepRed;
+		color: #fff;
+		padding: 7px 15px;
+		height: 40px;
+		border-radius: 3px;
+	}
+}
+
+header {
+	padding-left: 15px;
+	padding-right: 15px;
+
+	span {
+		margin-right: 15px;
+	}
+
+	input {
+		height: 40px;
+		width: 100%;
+		padding: 7px 15px;
+		border: 1px solid rgba(0,0,0,0.3);
+		border-radius: 3px;
+		max-width: 300px;
+	}
+}
+/* inc */
+@import 'sassfiles/inc/sidebar.scss';
+
+/* pages */
+@import 'sassfiles/pages/login.scss';

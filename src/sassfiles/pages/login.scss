@@ -1,0 +1,45 @@
+.login {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.l_left {
+		width: 40%;
+		height: 100vh;
+		background-color: $DeepRed;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		img {
+			width: 100%;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	.l_right {
+		width: 60%;
+		height: 100vh;
+		position: relative;
+
+		img {
+			display: block;
+			width: 100%;
+			max-width: 150px;
+			height: auto;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.login_form {
+			width: 100%;
+			max-width: 400px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+}
